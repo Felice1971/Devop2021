@@ -52,8 +52,10 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
    chkconfig jenkins on
    ```
    ### Configure the firewall and allow 8080 port
-   sudo firewall-cmd --permanent --zone=public --add-port=8080/tcp
-   sudo firewall-cmd --reload
+   
+   # sudo firewall-cmd --permanent --zone=public --add-port=8080/tcp
+   
+   # sudo firewall-cmd --reload
    
    - The sample out of the above command will looks as follow:
    [root@centos ~]# sudo firewall-cmd --permanent --zone=public --add-port=8080/tcp
