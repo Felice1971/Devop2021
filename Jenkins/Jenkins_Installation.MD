@@ -51,7 +51,16 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
    # Setup Jenkins to start at boot,
    chkconfig jenkins on
    ```
-
+   ### Configure the firewall and allow 8080 port
+   sudo firewall-cmd --permanent --zone=public --add-port=8080/tcp
+   sudo firewall-cmd --reload
+   
+   - The sample out of the above command will looks as follow:
+   [root@centos ~]# sudo firewall-cmd --permanent --zone=public --add-port=8080/tcp
+   success
+   [root@centos ~]# sudo firewall-cmd --reload
+   success
+   
    ### Accessing Jenkins
    By default jenkins runs at port `8080`, You can access jenkins at
    ```sh
