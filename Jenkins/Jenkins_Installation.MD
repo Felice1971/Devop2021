@@ -63,6 +63,8 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
    [root@centos ~]# sudo firewall-cmd --reload
    success
    
+   
+   
    ### Accessing Jenkins
    By default jenkins runs at port `8080`, You can access jenkins at
    ```sh
